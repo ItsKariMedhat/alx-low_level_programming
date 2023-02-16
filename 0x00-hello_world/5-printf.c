@@ -2,7 +2,7 @@
 
 /**
  * main - simple main function the prints msg using `printf`
- * Return 0 exit code
+ * Return: 0 exit code
  */
 int main(void)
 {
