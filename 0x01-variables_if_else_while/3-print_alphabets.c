@@ -3,14 +3,14 @@
 /**
  * main - Prints the alphabet in lowercase, and then in uppercase.
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main (void)
 {
 	int i;
 
 	for (i = 97; i <= 122; i++)
-		putcher(ch);
+		putcher(i);
 
 	for (i = 65; i <= 90; i++)
 		putchar(i);
