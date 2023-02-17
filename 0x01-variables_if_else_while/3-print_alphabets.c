@@ -11,10 +11,8 @@ int main (void)
 
 	for (i = 97; i <= 122; i++)
 		putcher(i);
-
 	for (i = 65; i <= 90; i++)
 		putchar(i);
-
 	putchar('\n');
 	return (0);
 }
