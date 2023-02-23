@@ -1,26 +1,24 @@
 #include "main.h"
 
 /**
- * more_numbers - entry point
- *
- * more_numbers - entry point
+ * more_numbers - print from 0 to 14 in one line x10
  *
  * Return: void
  */
 void more_numbers(void)
 {
-	int number, tens, units, row;
+	char i, j, a, b;
 
-	for (row = 1; row <= 10; row++)
+	for (i = 0; i < 10; i++)
 	{
-		for (number = 0; number <= 14; number++)
+		for (j = 0; j <= 14; j++)
 		{
-			tens = number / 10;
-			units = number & 10;
-			if (number > 9)
-				_putchar(tens + '0');
+			a = j / 10;
+			b = j % 10;
 
-			_putchar(units + '0');
+			if (j >= 10)
+				_putchar(a + '0');
+			_putchar(b + '0');
 		}
 		_putchar('\n');
 	}
