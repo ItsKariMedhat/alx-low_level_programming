@@ -1,20 +1,26 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
- * followed by a new line
+ * more_numbers - entry point
+ *
+ * more_numbers - entry point
+ *
+ * Return: void
  */
 void more_numbers(void)
 {
-	int i, j;
+	int number, tens, units, row;
 
-	for (i = 0; i < 10; i++)
+	for (row = 1; row <= 10; row++)
 	{
-		for (j = 0; j < 15; j++)
+		for (number = 0; number <= 14; number++)
 		{
-			if (j >= 10)
-				_putchar(j / 10 + '0');
-				_putchar(j % 10 + '0');
+			tens = number / 10;
+			units = number & 10;
+			if (number > 9)
+				_putchar(tens + '0');
+
+			_putchar(units + '0');
 		}
 		_putchar('\n');
 	}
