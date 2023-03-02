@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/**
- * main: only one statment
- * Return: 98
- */
 int main(void)
 {
 	int n;
